@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Phan Minh Khanh for feedback or inquiries.">
+    <title>Contact Me | Phan Minh Khanh Portfolio</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Get In Touch</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="hobby.html">Hobby</a></li>
+                <li><a href="hometown.html">My Hometown</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main class="container">
+    <section class="card">
+        <h2>Send Your Feedback</h2>
+        
+        <div class="progress-section">
+            <label for="form-progress">Form Completion:</label>
+            <progress id="form-progress" value="0" max="100"></progress>
+        </div>
+
+        <form id="contactForm">
+            <fieldset>
+                <legend>Basic Information</legend>
+                
+                <div class="field-div">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                </div>
+
+                <div class="field-div">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="example@email.com">
+                </div>
+
+                <div class="field-div">
+                    <label for="topic">Feedback Topic:</label>
+                    <input list="topics" id="topic" name="topic" placeholder="Select or type a topic">
+                    <datalist id="topics">
+                        <option value="Website Design">
+                        <option value="Content Accuracy">
+                        <option value="Technical Bug">
+                    </datalist>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Detailed Information</legend>
+
+                <div class="field-div">
+                    <label for="phone">Phone Number (tel):</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="0123456789">
+                </div>
+
+                <div class="field-div">
+                    <label for="pass">Feedback PIN (password):</label>
+                    <input type="password" id="pass" name="pass" placeholder="Numeric PIN">
+                </div>
+
+                <div class="field-div">
+                    <label for="age">Your Age (number):</label>
+                    <input type="number" id="age" name="age" min="1" max="100">
+                </div>
+
+                <div class="field-div">
+                    <label for="date">Date of Visit (date):</label>
+                    <input type="date" id="date" name="date">
+                </div>
+
+                <div class="field-div">
+                    <label for="category">Inquiry Category (select/optgroup):</label>
+                    <select id="category" name="category">
+                        <optgroup label="Academic">
+                            <option value="it">Information Technology</option>
+                            <option value="systems">System Design</option>
+                        </optgroup>
+                        <optgroup label="Personal">
+                            <option value="collab">Collaboration</option>
+                            <option value="social">Social Connect</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="field-div">
+                    <label>How did you find me? (radio):</label>
+                    <label><input type="radio" name="source" value="social"> Social Media</label>
+                    <label><input type="radio" name="source" value="friend"> Friend</label>
+                </div>
+
+                <div class="field-div">
+                    <label>Preferences (checkbox):</label>
+                    <label><input type="checkbox" name="pref" value="newsletter"> Subscribe to updates</label>
+                </div>
+
+                <div class="field-div">
+                    <label for="favcolor">Theme Color (color):</label>
+                    <input type="color" id="favcolor" name="favcolor" value="#3498db">
+                </div>
+
+                <div class="field-div">
+                    <label for="fileup">Attach Profile (file):</label>
+                    <input type="file" id="fileup" name="fileup">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Message</legend>
+                <div class="field-div">
+                    <label for="feedback">Message:</label>
+                    <textarea id="feedback" name="feedback" rows="5" required placeholder="Write here..."></textarea>
+                </div>
+
+                <div class="field-div">
+                    <label for="urgency">Urgency Level (range/meter):</label>
+                    <input type="range" id="urgency" name="urgency" min="0" max="100" value="50">
+                    <meter id="uMeter" min="0" max="100" value="50"></meter>
+                </div>
+            </fieldset>
+
+            <div class="button-group">
+                <button type="submit" class="submit-btn">Send Message</button>
+                <button type="reset" class="btn-reset">Clear</button>
+            </div>
+        </form>
+    </section>
+</main>
+
+    <footer>
+        <p>Created by Khanh | © 2026 All Rights Reserved</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
